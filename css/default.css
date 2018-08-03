@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #27292E;
+  color: #D4D4D5;
+}
+
 li,
 ul {
   list-style: none;
@@ -28,4 +33,12 @@ main {
   margin-left: auto;
   margin-right: auto;
   height: 1000vh;
+}
+
+.icon {
+  width: 4em;
+  height: 4em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }

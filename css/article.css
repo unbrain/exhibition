@@ -1,0 +1,63 @@
+.article {
+  margin-top: 5em;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.title .hd {
+  font-size: 3em;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content .contentItem {
+  padding: 2em 0;
+  width: 26%;
+}
+
+.content .contentItem .contentItemLeft>div {
+  padding: 1em 2em;
+}
+
+.content .contentItem .contentItemRight {
+  border: 1px solid #555;
+  height: 250px;
+}
+
+.content .contentItem .contentItemLeft {
+  height: 250px;
+}
+
+.content .contentItem:hover .contentItemRight {
+  transform: translate(-20px, -20px);
+  background: #27292E;
+  border: 1px solid #f2f2f2;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.content .contentItem:hover .contentItemLeft {
+  background: #fff;
+  transition: 1s;
+  transform: translate(10px, 10px);
+}
+
+.content .contentItem .bd{
+  font-size: 20px;
+  padding: 10px;
+}
