@@ -1,6 +1,8 @@
 .article {
-  margin-top: 5em;
   display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -36,11 +38,11 @@
 
 .content .contentItem .contentItemRight {
   border: 1px solid #555;
-  height: 250px;
+  height: 230px;
 }
 
 .content .contentItem .contentItemLeft {
-  height: 250px;
+  height: 230px;
 }
 
 .content .contentItem:hover .contentItemRight {
