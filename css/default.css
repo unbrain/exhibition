@@ -22,3 +22,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+main {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1000vh;
+}

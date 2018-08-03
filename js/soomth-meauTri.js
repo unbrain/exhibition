@@ -8,7 +8,7 @@
         aMeauTris: null,        
         init: function(view){
             this.view = view            
-            this.initAnimate()
+            // this.initAnimate()
             this.bindEvens()           
         },
         initAnimate:function(){
