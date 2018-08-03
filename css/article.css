@@ -48,7 +48,6 @@
 .content .contentItem:hover .contentItemRight {
   transform: translate(-20px, -20px);
   background: #27292E;
-  border: 1px solid #f2f2f2;
   transition: 1s;
   cursor: pointer;
 }
