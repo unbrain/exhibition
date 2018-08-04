@@ -94,3 +94,7 @@ input {
     transform: translateY(0%);
   }
 }
+
+.topNavBar-show{
+  display: none;
+}

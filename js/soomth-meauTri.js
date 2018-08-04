@@ -26,7 +26,14 @@
                 aMenus[i].onclick =  (e) => {
                     e.preventDefault()
                     this.movToA(e)
+                    this.view.classList.remove('active')
                 }
+            }
+            this.view.onmouseenter = function (e) {
+                e.currentTarget.classList.add('active')
+            }
+            this.view.onmouseleave = function (e) {
+                e.currentTarget.classList.remove('active')
             }
         },
         addAActive: function(aMeauTris){
