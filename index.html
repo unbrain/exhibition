@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/default.css">
-  <link rel="stylesheet" href="css/topBar.css">
-  <link rel="stylesheet" href="css/imgShow.css">
-  <link rel="stylesheet" href="css/userCard.css">
-  <link rel="stylesheet" href="css/article.css">
-  <link rel="stylesheet" href="css/works.css">
-  <link rel="stylesheet" href="css/messages.css">
-  <script src="//at.alicdn.com/t/font_776928_one7mpfta7q.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/default.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/topBar.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/imgShow.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/userCard.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/article.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/works.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/messages.css" media="(min-width: 680px)">
+  <link rel="stylesheet" href="css/moblie.css" media="(max-width: 680px)">
+  <script src="//at.alicdn.com/t/font_776928_hh2x7ahui8q.js"></script>
   <script src="//at.alicdn.com/t/font_568929_dl2ir8hddk4.js"></script>
   <title>ZY</title>
 </head>
 
 <body>
+
   <div class="topNavBar" id="topNav">
     <div class="topNavBar-inner">
-      <a class="logo" src="#" alt="logo">
+      <a class="logo" src="https://unbrain.github.io/" alt="logo">
         <span class="lzy">Lzy</span>
       </a>
       <nav class="meau">
@@ -34,25 +37,36 @@
           </li>
           <li class="meauTrigger">
             <a href="#jWorks">作品</a>
-            <!-- <ul class="submenu">
-              <li>作品1</li>
-              <li>作品2</li>
-              <li>作品3</li>
-            </ul> -->
           </li>
           <li class="meauTrigger">
             <a href="#jMessages">留言</a>
           </li>
         </ul>
+        <a href="#topNav">
+          <div class="up">
+
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-up"></use>
+            </svg>
+
+          </div>
+        </a>
       </nav>
     </div>
   </div>
+
   <div class="imgShow">
     <div>
       <div>
         <div class="imgWel">
           <div class="hd">
-            Hi
+            <div class="pacman">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -239,6 +253,7 @@
 
       <div class="exhibition center">
         <div class="hm center mainContain userCard">
+
           <div class="description">
             <div class="hd">极简画板</div>
             <div class="bd">
@@ -251,21 +266,25 @@
             </div>
             <div class="ft">
               <div class="workdec">项目描述</div>
-              <div class="detail"> 画板的制作可以说是对 canvas 的使用的一种熟悉，同时可应用一些简单的 js。是很不错的上手简单项目，但是想要更好的使用体验还是需要自己不断的学习。</div>
+              <div class="detail"> 该项目使用原生JS实现，主要调用 Canvas API，实现了划线、调色与粗细、橡皮擦、保存和清屏功能。对移动端进行兼容。</div>
             </div>
-
+            <button>
+              <a href="https://github.com/unbrain/myCanvas">更多</a>
+            </button>
           </div>
           <div class="show">
-            <img src="../img/brush.jpg" alt="">
+            <img src="../img/paint.png" alt="">
           </div>
+
         </div>
+
         <div class="trangle"></div>
         <div class="trangleUp"></div>
       </div>
       <div class="exhibition center">
         <div class="hm center mainContain userCard">
           <div class="description">
-            <div class="hd">极简画板</div>
+            <div class="hd">无脸人</div>
             <div class="bd">
               <div class="tech">
                 技术栈
@@ -276,12 +295,14 @@
             </div>
             <div class="ft">
               <div class="workdec">项目描述</div>
-              <div class="detail"> 画板的制作可以说是对 canvas 的使用的一种熟悉，同时可应用一些简单的 js。是很不错的上手简单项目，但是想要更好的使用体验还是需要自己不断的学习。</div>
+              <div class="detail"> 该项目使得代码动态展示在屏幕，并根据代码画出了《千与千寻》中的无脸人。通过这项目自己熟悉学习了 CSS3 的新的特性并学习去使用别人的库让自己的项目更美观。</div>
             </div>
-
+            <button>
+              <a href="https://github.com/unbrain/noFaceMan">更多</a>
+            </button>
           </div>
           <div class="show">
-            <img src="../img/brush.jpg" alt="">
+            <img src="../img/nofaceman.png" alt="">
           </div>
         </div>
         <div class="ltrangle"></div>
@@ -290,7 +311,7 @@
       <div class="exhibition center">
         <div class="hm center mainContain userCard">
           <div class="description">
-            <div class="hd">极简画板</div>
+            <div class="hd">网易云音乐轻实现</div>
             <div class="bd">
               <div class="tech">
                 技术栈
@@ -301,12 +322,15 @@
             </div>
             <div class="ft">
               <div class="workdec">项目描述</div>
-              <div class="detail"> 画板的制作可以说是对 canvas 的使用的一种熟悉，同时可应用一些简单的 js。是很不错的上手简单项目，但是想要更好的使用体验还是需要自己不断的学习。</div>
+              <div class="detail">该项目使用 jQuery 模仿网易云音乐手机端，使用媒体查询，完成手机端功能并写有 PC 端后台方便管理员管理资源。使用 MVC 的模式来写代码，在踩坑中不断地去积累书本上的知识。使用 leandcloud 提供的
+                SDK 来体会如何与后端进行合作。</div>
             </div>
-
+            <button>
+              <a href="https://github.com/unbrain/awesome-music">更多</a>
+            </button>
           </div>
           <div class="show">
-            <img src="../img/brush.jpg" alt="">
+            <img src="../img/music.png" alt="">
           </div>
         </div>
         <div class="trangle"></div>
@@ -315,7 +339,7 @@
       <div class="exhibition center">
         <div class="hm center mainContain userCard">
           <div class="description">
-            <div class="hd">极简画板</div>
+            <div class="hd">vue 简历编辑器</div>
             <div class="bd">
               <div class="tech">
                 技术栈
@@ -326,12 +350,14 @@
             </div>
             <div class="ft">
               <div class="workdec">项目描述</div>
-              <div class="detail"> 画板的制作可以说是对 canvas 的使用的一种熟悉，同时可应用一些简单的 js。是很不错的上手简单项目，但是想要更好的使用体验还是需要自己不断的学习。</div>
+              <div class="detail"> 该项目使用 Vue 来实现一个简历的编辑功能，具有登录，注册，换肤，打印等功能。后面还用 vue-cli 来熟悉了 webpack 并使用 Sass 写 CSS。 对 Vue 组件中如何通信，双向绑定等有了一个比较深刻的印象。</div>
             </div>
-
+            <button>
+              <a href="https://github.com/unbrain/vue-demo">更多</a>
+            </button>
           </div>
           <div class="show">
-            <img src="../img/brush.jpg" alt="">
+            <img src="../img/cv.png" alt="">
           </div>
         </div>
         <div class="ltrangle"></div>
@@ -340,23 +366,17 @@
       <div class="exhibition center">
         <div class="hm center mainContain userCard">
           <div class="description">
-            <div class="hd">极简画板</div>
-            <div class="bd">
-              <div class="tech">
-                技术栈
-              </div>
-              <div class="detail">
-                Google Canvas MDN iconfont (获取需要的图标)
-              </div>
-            </div>
+            <div class="hd">小东西</div>
             <div class="ft">
               <div class="workdec">项目描述</div>
-              <div class="detail"> 画板的制作可以说是对 canvas 的使用的一种熟悉，同时可应用一些简单的 js。是很不错的上手简单项目，但是想要更好的使用体验还是需要自己不断的学习。</div>
+              <div class="detail">自学以来的练手</div>
             </div>
-
+            <button>
+              <a href="https://github.com/unbrain/awesome-music">更多</a>
+            </button>
           </div>
           <div class="show">
-            <img src="../img/brush.jpg" alt="">
+            <img src="../img/road.png" alt="">
           </div>
         </div>
         <div class="trangle"></div>

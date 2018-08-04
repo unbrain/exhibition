@@ -16,6 +16,7 @@ body {
   background: #27292E;
   color: #D4D4D5;
   font-size: 16px;
+  position: relative;
 }
 
 li,
@@ -67,4 +68,29 @@ input {
   border: transparent;
   border-bottom: 1px solid #fff;
   background: #35363B;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.up {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  animation: up 3s 0s ease-in-out infinite;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0%);
+  }
+  60% {
+    transform: translateY(50%)
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

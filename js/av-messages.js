@@ -13,7 +13,7 @@
         fetch: function(){
             var query = new AV.Query('messages');
             query.descending('createdAt');
-            query.limit(6);// 最多返回 6 条结果
+            query.limit(5);// 最多返回 6 条结果
             return query.find()
         },
         save: function(name, content){

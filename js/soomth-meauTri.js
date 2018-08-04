@@ -8,7 +8,7 @@
         aMeauTris: null,        
         init: function(view){
             this.view = view            
-            // this.initAnimate()
+            this.initAnimate()
             this.bindEvens()           
         },
         initAnimate:function(){
@@ -20,7 +20,7 @@
         },
         bindEvens: function () {
             let aMeauTris = this.view.getElementsByClassName('meauTrigger')
-            let aMenus = this.view.querySelectorAll('.clearfix > li > a')
+            let aMenus = this.view.querySelectorAll('.meau a')
             this.addAActive(aMeauTris)
             for (let i = 0; i < aMenus.length; i++) {
                 aMenus[i].onclick =  (e) => {
