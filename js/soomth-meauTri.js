@@ -26,7 +26,6 @@
                 aMenus[i].onclick =  (e) => {
                     e.preventDefault()
                     this.movToA(e)
-                    this.view.classList.remove('active')
                 }
             }
             this.view.onmouseenter = function (e) {
