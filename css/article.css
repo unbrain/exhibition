@@ -1,8 +1,5 @@
-.article {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+.articleContain {
+  background-color: #35363B;
 }
 
 .title {
@@ -11,13 +8,22 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 2em;
 }
 
-.title .hd {
+.title .hd>div {
+  width: 0;
+  border-bottom: 3px solid transparent;
+  transition: 2s;
+}
+
+.title .hd:hover>div {
+  width: 100%;
+  border-bottom: 3px solid #ccc;
+}
+
+.title .hd a {
   font-size: 3em;
-  border-bottom: 2px solid #ccc;
-  margin-bottom: 10px;
 }
 
 .content {
@@ -58,7 +64,7 @@
   transform: translate(10px, 10px);
 }
 
-.content .contentItem .bd{
+.content .contentItem .bd {
   font-size: 20px;
   padding: 10px;
 }

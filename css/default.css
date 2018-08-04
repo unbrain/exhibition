@@ -28,12 +28,7 @@ a {
   color: inherit;
 }
 
-main {
-  width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 1000vh;
-}
+main {}
 
 .icon {
   width: 4em;
@@ -41,4 +36,17 @@ main {
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainContain {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -8,19 +8,31 @@
 }
 
 .imgShow>div,
-.imgShow>div>div{
+.imgShow>div>div {
   margin: 5px;
   border: 1px solid #fff;
 }
 
-.imgWel{
+.imgWel {
   border: 1px solid #fff;
   margin: 10px;
   padding: 5em 8em;
-  background-color: rgba(255, 255, 255, 0.5)
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.imgShow .hd{
+.imgShow .hd {
   font-size: 6em;
   color: black;
+}
+
+@keyframes ball-scale {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.0);
+    opacity: 1;
+  }
 }

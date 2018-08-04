@@ -36,6 +36,7 @@
 }
 
 .pictureandtext {
+  max-width: 940x;
   display: flex;
   padding: 55px;
 }
