@@ -12,7 +12,7 @@
   border-right: 80vh solid white;
   border-radius: 4px;
   opacity: 0.9;
-  animation: left 3s 0s ease-in-out;
+  animation: left 10s 0s ease-in-out;
 }
 
 .trangleUp {
@@ -22,7 +22,27 @@
   border: 80vh solid transparent;
   border-right: 80vh solid white;
   opacity: 0.7;
-  animation: left 3s -1s ease-in-out;
+  animation: left 10s -5s ease-in-out;
+}
+
+.ltrangle {
+  position: absolute;
+  left: 0;
+  border: 80vh solid transparent;
+  border-left: 80vh solid white;
+  border-radius: 4px;
+  opacity: 0.9;
+  animation: right 10s 0s ease-in-out;
+}
+
+.ltrangleUp {
+  position: absolute;
+  left: 0;
+  top: 3em;
+  border: 80vh solid transparent;
+  border-left: 80vh solid white;
+  opacity: 0.7;
+  animation: right 10s -5s ease-in-out;
 }
 
 @keyframes left {
@@ -31,15 +51,15 @@
   }
   100% {}
 }
-
-@keyframes down {
+@keyframes right {
   0% {
-    transform: translateY(-100%);
+    transform: translateX(-50%);
   }
   100% {}
 }
 
 .exhibition .hm {
+  opacity: 0.9;
   display: flex;
   justify-content: space-around;
   padding: 3em;

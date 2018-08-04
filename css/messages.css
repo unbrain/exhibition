@@ -1,0 +1,109 @@
+.messages .messages-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #27292E;
+}
+
+#messagesList {
+  position: relative;
+}
+
+#messagesList>div {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  width: 45%;
+  height: 150px;
+  background-color: #35363B;
+  border-top: 5px solid #B4E1DC;
+  padding: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  float: left;
+}
+
+#messagesList>div:nth-child(2n) {
+  margin-top: 5%;
+}
+
+#messagesList>div:nth-child(2n+1) {
+  margin-right: 5%;
+}
+
+#messagesList>div:nth-child(2n) {
+  margin-left: 5%;
+}
+
+#messagesList>div::after {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 40px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+#messagesList>div::before {
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  content: '';
+  display: block;
+  background-color: #99BFBC;
+  position: absolute;
+  border-radius: 50%;
+}
+
+#messagesList>div:nth-child(2n+1)::before {
+  transform: translateY(-50%);
+  left: 465px;
+}
+
+#messagesList>div:nth-child(2n)::before {
+  transform: translateY(-50%);
+  right: 465px;
+}
+
+#messagesList>div:nth-child(2n+1)::after {
+  left: 100%;
+  border-left: 10px solid #35363B;
+}
+
+#messagesList>div:nth-child(2n)::after {
+  right: 100%;
+  border-right: 10px solid #35363B;
+}
+
+#messagesList>div>div {
+  color: #B4E1DC
+}
+
+#messagesList>div h3 {
+  color: #BBBBBB;
+  font-size: 1.6em;
+}
+
+#messagesList>div p {
+  color: #767779;
+  margin-top: 1em;
+}
+
+.messages form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  max-width: 940px;
+  background-color: #35363B;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.messages form label {
+  margin: 2em;
+}
+
+.messages form button {
+  margin: 1em 2em;
+  width: 100px;
+}
