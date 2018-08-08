@@ -21,19 +21,33 @@
         bindEvens: function () {
             let aMeauTris = this.view.getElementsByClassName('meauTrigger')
             let aMenus = this.view.querySelectorAll('.meau a')
+            let topshow = this.view.querySelector('.topNavBar-show')
             this.addAActive(aMeauTris)
             for (let i = 0; i < aMenus.length; i++) {
                 aMenus[i].onclick =  (e) => {
                     e.preventDefault()
                     this.movToA(e)
+                    this.view.classList.remove('active')
                 }
             }
-            this.view.onmouseenter = function (e) {
-                e.currentTarget.classList.add('active')
-            }
-            this.view.onmouseleave = function (e) {
-                e.currentTarget.classList.remove('active')
-            }
+
+            topshow.addEventListener("mousedown", (e) => {
+                console.log('enter');
+                if(this.view.classList.contains('active')){
+                    console.log('remove');
+                    
+                    this.view.classList.remove('active')
+                }else{
+                    console.log('add');
+                    
+                    this.view.classList.add('active')
+                }
+            })
+            this.view.addEventListener("mouseleave", (e) => {
+                e.preventDefault()
+                
+                this.view.classList.remove('active')
+            })
         },
         addAActive: function(aMeauTris){
             for (let i = 0; i < aMeauTris.length; i++) {

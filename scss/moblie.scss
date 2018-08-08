@@ -160,10 +160,10 @@ a {
       top: px(4);
       right: px(-2);
       white-space: nowrap;
-      background-color: #fff;
+      background-color: $color1;
       >li {
-        border-bottom: 1px solid $color1;
-        padding: 4px;
+        border-bottom: 1px solid $color3;
+        padding: px(4) px(6);
       }
     }
   }
@@ -380,13 +380,13 @@ a {
 
 .userCard dt {
   width: 30%;
-  float: left;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .userCard dd {
   color: #aaa;
+  padding-left: px(3);
   margin-bottom: 10px;
 }
 

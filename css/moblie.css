@@ -112,10 +112,10 @@ a {
       top: 0.0625rem;
       right: -0.03125rem;
       white-space: nowrap;
-      background-color: #fff; }
+      background-color: #27292E; }
       .topNavBar .meau.active ul > li {
-        border-bottom: 1px solid #27292E;
-        padding: 4px; }
+        border-bottom: 1px solid #D4D4D5;
+        padding: 0.0625rem 0.09375rem; }
 
 .imgShow {
   width: 100%;
@@ -290,12 +290,12 @@ a {
 
 .userCard dt {
   width: 30%;
-  float: left;
   margin-bottom: 10px;
   font-weight: bold; }
 
 .userCard dd {
   color: #aaa;
+  padding-left: 0.04688rem;
   margin-bottom: 10px; }
 
 .userCard footer {
