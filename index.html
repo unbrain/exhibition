@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css">
   <link rel="stylesheet" href="css/default.css" media="(min-width: 680px)">
   <link rel="stylesheet" href="css/topBar.css" media="(min-width: 680px)">
   <link rel="stylesheet" href="css/imgShow.css" media="(min-width: 680px)">
@@ -25,6 +24,7 @@
 </head>
 
 <body>
+
   <div class="topNavBar" id="topNav">
     <div class="topNavBar-inner">
       <a class="logo" src="https://unbrain.github.io/" alt="logo">
@@ -404,100 +404,16 @@
         </div>
       </section>
     </div>
-    <div id="fullpage">
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
-    </div>
+
 
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
   <script src="//cdn1.lncld.net/static/js/3.6.4/av-min.js"></script>
 
   <script src="./js/topNavBar-sticky.js"></script>
   <script src="./js/soomth-meauTri.js"></script>
   <script src="./js/av-messages.js"></script>
-  <script>
-    var myFullpage = new fullpage('#fullpage', {
-        //导航
-        menu: '#menu',
-        lockAnchors: false,
-        anchors: ['firstPage', 'secondPage'],
-        navigation: false,
-        navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
-
-        //滚动
-        css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        fitToSection: true,
-        fitToSectionDelay: 1000,
-        scrollBar: false,
-        easing: 'easeInOutCubic',
-        easingcss3: 'ease',
-        loopBottom: false,
-        loopTop: false,
-        loopHorizontal: true,
-        continuousVertical: false,
-        continuousHorizontal: false,
-        scrollHorizontally: false,
-        interlockedSlides: false,
-        dragAndMove: false,
-        offsetSections: false,
-        resetSliders: false,
-        fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
-        scrollOverflow: false,
-        scrollOverflowReset: false,
-        scrollOverflowOptions: null,
-        touchSensitivity: 15,
-        normalScrollElementTouchThreshold: 5,
-        bigSectionsDestination: null,
-
-        //可访问
-        keyboardScrolling: true,
-        animateAnchor: true,
-        recordHistory: true,
-
-        //设计
-        controlArrows: true,
-        verticalCentered: true,
-        sectionsColor: ['#ccc', '#fff'],
-        paddingTop: '3em',
-        paddingBottom: '10px',
-        fixedElements: '#header, .footer',
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-        responsiveSlides: false,
-        parallax: false,
-        parallaxOptions: { type: 'reveal', percentage: 62, property: 'translate' },
-
-        //自定义选择器
-        sectionSelector: '.section',
-        slideSelector: '.slide',
-
-        lazyLoading: true,
-
-        //事件
-        onLeave: function (origin, destination, direction) { },
-        afterLoad: function (origin, destination, direction) { },
-        afterRender: function () { },
-        afterResize: function (width, height) { },
-        afterResponsive: function (isResponsive) { },
-        afterSlideLoad: function (section, origin, destination, direction) { },
-        onSlideLeave: function (section, origin, destination, direction) { }
-      });
-
-    //methods
-    fullpage_api.setAllowScrolling(false);
-  </script>
 </body>
 
 </html>
